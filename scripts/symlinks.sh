@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ln -sf "${DOTFILES}/.zshenv" "${HOME}/.zshenv"
-ln -sf "${DOTFILES}/.zshrc" "${HOME}/.zshrc"
-ln -sf "${DOTFILES}/ssh/config" "${HOME}/.ssh/config"
-ln -sf "${DOTFILES}/config" "${HOME}/.config"
+ln -sf "${HOME}/.dotfiles/.zshenv" "${HOME}/.zshenv"
+ln -sf "${HOME}/.dotfiles/.zshrc" "${HOME}/.zshrc"
+ln -sf "${HOME}/.dotfiles/ssh/config" "${HOME}/.ssh/config"
+ln -sf "${HOME}/.dotfiles/config" "${HOME}/.config"
