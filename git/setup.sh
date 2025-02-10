@@ -11,6 +11,8 @@ git config --global alias.glog "log --graph --pretty=format:'%Cred%h%Creset -%C(
 git config --global alias.delete-merged '!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\''\\*'\'' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f'
 git config --global alias.cob '!f() { git checkout -B $1 origin/$1 }; f'
 git config --global alias.create '!f() { git checkout -b $1 -t origin/$1}; f'
+git config --global alias.fp "!sh -c 'git stash && git fetch && git pull && git stash pop #'"
+git config --global alias.rfo "!sh -c 'git stash && git fetch origin && git rebase \"$1\" && git stash pop #'"
 
 # Fetch settings
 git config --global fetch.prune true

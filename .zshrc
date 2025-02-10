@@ -1,5 +1,5 @@
-# Defer loading of fnm, jenv, and starship
-source "$DOTFILES/zsh/deferred-eval-source.zsh" 
+# Defer loading of fnm, jenv
+#source "$DOTFILES/zsh/deferred-eval-source.zsh" 
 
 HISTFILE=~/.zsh_history                                  # File where history is stored
 HISTSIZE=1000000
@@ -34,13 +34,15 @@ compinit
 # Init Starship
 eval "$(starship init zsh)"
 
+# Init fnm
+eval "$(fnm env --use-on-cd --version-file-strategy=recursive --resolve-engines --shell zsh)"
+
 # Completions
 eval "$(fnm completions --shell zsh)"
 
-source "$DOTFILES/zsh/aliases.zsh"  
+source "$DOTFILES/zsh/aliases.zsh" 
 
 # External plugins
 source "${HOMEBREW_PREFIX}/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
 source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-
