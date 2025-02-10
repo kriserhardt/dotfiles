@@ -1,0 +1,7 @@
+echo "Don't forget to download the most recent release for the following apps:"
+echo "Better Display - https://github.com/waydabber/BetterDisplay/releases"
+echo "Ghostty - https://ghostty.org/download"
+echo "CoconutBattery - https://coconut-flavour.com/coconutbattery/"
+echo "Al Dente https://apphousekitchen.com"
+echo "Moom - https://manytricks.com/moom/releasenotes/"
+echo "iA Presenter - https://ia.net/presenter"
